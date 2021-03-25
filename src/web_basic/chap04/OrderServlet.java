@@ -32,6 +32,8 @@ public class OrderServlet extends HttpServlet {
 		String cntIndia = request.getParameter("cntIndia");
 		String cntTamra = request.getParameter("cntTamra");
 		
+		
+		
 		out.println("<html>");
 		out.println("<head>");
 		out.println("</head>");
@@ -44,8 +46,15 @@ public class OrderServlet extends HttpServlet {
 		out.println("전화번호 : " + tel2 + "<br>");
 		out.println("메모 : " + comment + "<br>");
 		out.println("<h2>주문 정보</h2>");
-		if 
-		
+		if (item1 != null) {
+			out.println(item1 + " : " + cntGuate + "개<br>");
+		}
+		if (item2 != null) {
+			out.println(item2 + " : " + cntIndia + "개<br>");
+		}
+		if (item3 != null) {
+			out.println(item3 + " : " + cntTamra + "개<br>");
+		}
 		
 	}
 
