@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+*{
+	margin: 20px auto; /* 마진 상하 20px 좌우 auto  */
+}
+body{
+	color: blue;
+}
+h2{
+	color: brown !important;
+}
+
+#container{
+	width: 600px;
+	padding: 15px;
+	border:1px dotted gray;	
+}
