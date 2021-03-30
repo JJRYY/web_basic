@@ -52,25 +52,20 @@ public class FileUploadServlet extends HttpServlet {
 			String file2 = (String)files.nextElement();
 			filename2 = multi.getFilesystemName(file2);
 			origfilename2 = multi.getOriginalFileName(file2);
-		} catch (Exception e){
+			
+			request.setAttribute("name", name);
+			request.setAttribute("subject", subject);
+			request.setAttribute("filename1", filename1);
+			request.setAttribute("filename2", filename2);
+			request.setAttribute("origfilename1", origfilename1);
+			request.setAttribute("origfilename2", origfilename2);
+			
+			request.getRequestDispatcher("fileCheck.jsp").forward(request,  response);
+
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
-		out.println("name: " + name + "<br>");
-		out.println("subject: " + subject + "<br>");
-		out.println(filename1 + "<br>");
-		out.println(origfilename1 + "<br>");
-		out.println(filename2 + "<br>");
-		out.println(origfilename2 + "<br>");
-		
-		request.setAttribute("name", name);
-		request.setAttribute("subject", subject);
-		request.setAttribute("filename1", filename1);
-		request.setAttribute("filename2", filename2);
-		request.setAttribute("origfilename1", origfilename1);
-		request.setAttribute("origfilename2", origfilename2);
-		
-		request.getRequestDispatcher("fileCheck.jsp").forward(request,  response);
-	}
+		}
 
 }
