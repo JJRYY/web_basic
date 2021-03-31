@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+body{
+	background: #222222;	
+}
+legend{
+	color: rgb(255,255,255);
+}
+.text1{
+	color: rgb(255,255,255);
+}
+.text2{
+	color: rgba(255,255,255,0.8);
+}
+.text3{
+	color: rgba(255,255,255,0.5);
+}
+.text4{
+	color: rgba(255,255,255,0.2);
+}
+
+div{
+	display: inline-block; /* 한 줄로 보이게 함*/
+	background-color:white;
+	width: 90%;
+	padding: 15px;
+	border: 1px solid black;
+}
+p {
+	line-height: 30px;
+}
+
+.bg1 {
+	width: 300px;
+	padding: 35px;
+	border: 5px dotted #222;
+	background: skyblue;
+	margin-bottom: 20px;
+	border-color: red;
+	background-clip: border-box;
+}
+.bg2 {
+	width: 300px;
+	padding: 35px;
+	border: 5px dotted #222;
+	background: skyblue;
+	margin-bottom: 20px;
+	border-color: red;
+	background-clip: padding-box;
+}
+.bg3 {
+	width: 300px;
+	padding: 35px;
+	border: 5px dotted #222;
+	background: skyblue;
+	margin-bottom: 20px;
+	border-color: red;
+	background-clip: content-box;
+}
