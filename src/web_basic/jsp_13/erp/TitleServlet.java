@@ -24,7 +24,7 @@ public class TitleServlet extends HttpServlet {
 		response.setContentType("text/html;charset=UTF-8");
 		
 		List<Title> lists = service.showTitles();
-		System.out.println(lists);
+//		System.out.println(lists);
 
 		request.setAttribute("list", lists);
 		request.getRequestDispatcher("/jsp_13/titlelist.jsp").forward(request, response);
