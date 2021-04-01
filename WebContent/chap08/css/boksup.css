@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+div {
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+	display: inline-block;
+}
+.div1 { background:green; }
+.div2 { background:orange; }
+.div3 { background:blue; }
+div:hover{
+	border: 3px solid red;
+}

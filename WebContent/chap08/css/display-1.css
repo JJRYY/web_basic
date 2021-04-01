@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+div {
+	margin: 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+#block img {
+	display : block;
+	margin: 10px;
+}
