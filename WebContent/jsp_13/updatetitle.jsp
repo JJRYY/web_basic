@@ -13,7 +13,7 @@ h2 { text-align: center;}
 </style>
 </head>
 <body>
-<h1>직책 추가</h1>
+<h1>직책 수정</h1>
 	<form action="titleUpdate" method="post">
 	<fieldset>
 	<ul>
