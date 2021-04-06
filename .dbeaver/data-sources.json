@@ -1,7 +1,7 @@
 {
 	"folders": {},
 	"connections": {
-		"mysql8-1788ad6ca94-1f149bd756793d32": {
+		"mysql8-1789f637531-8ca3ae4fb0155e5": {
 			"provider": "mysql",
 			"driver": "mysql8",
 			"name": "localhost",
@@ -18,7 +18,7 @@
 				"handlers": {}
 			}
 		},
-		"mysql5-1788ad7e7a6-38b2dd6b3c75ef9f": {
+		"mysql5-1789f65e169-58e314bcd68ab6d8": {
 			"provider": "mysql",
 			"driver": "mysql5",
 			"name": "native_jdbc",
