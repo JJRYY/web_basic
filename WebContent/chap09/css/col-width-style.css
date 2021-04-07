@@ -1,0 +1,22 @@
+@charset "UTF-8";
+body {
+	text-align: center;
+}
+
+div {
+	padding: 20px;
+	width: 60%;
+	margin: 20px auto;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+.multi {
+	-webkit-column-width: 120px;
+	-moz-column-width: 120px;
+	column-width: 120px;
+	column-count: 3;
+	column-gap: 5em;
+	column-rule: 2px dashed gray;
+	text-align: justify;
+}

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+section {
+	padding: 20px;
+	width: 80%;
+	margin: 20px auto;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+.multi {
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3;
+	-webkit-column-rule: 2px dotted #000;
+	-moz-column-rule: 2px dotted #000;
+	column-rule: 2px dotted #000;
+	text-align: justify;
+}
+
+.multi h3 {
+	break-befor: column;
+}
+
+.no-col {
+	background: #f0f0f0;
+	margin: 10px 3px;
+	padding: 20px;
+	border-radius: 5px;
+	-webkit-column-span: all;
+	-moz-column-span: all;
+	column-span: all;
+}

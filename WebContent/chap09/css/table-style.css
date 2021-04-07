@@ -1,0 +1,72 @@
+@charset "UTF-8";
+table{
+	display: inline-block;
+	margin: 20px;
+}
+
+.table1 {
+	border: 1px solid black;
+}
+
+.table1 td {
+	border: 1px dotted black;
+	padding: 10px;
+	text-align: center;
+}
+
+.table2 {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.table2 td {
+	border: 1px dashed black;
+	padding: 10px;
+	text-align: center;
+}
+
+.table3 {
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 20px 10px;
+}
+.table3 td {
+	border: 1px solid black;
+	padding: 10px;
+	text-align: center;
+}
+
+.table4{
+	border-collapse: separate;
+	margin: 20px;
+}
+.table4 td {
+	border: 1px solid black;
+	padding: 10px;
+	text-align: center;
+}
+#tb4 {
+	empty-cells: hide;
+}
+
+.table5 {
+	border-collapse: collapse;
+	width: 300px;
+	table-layout: fixed;
+	word-break: break-all;
+	height: auto;
+}
+.table5 td {
+	width: 150px;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+.table6 td {
+	border: 1px soild black;
+	height: 100px;
+	text-align: center;
+}
+.va1 { vertical-align: top;	}
+.va2 { vertical-align: bottom;	}
+.va3 { vertical-align: middle;	}
