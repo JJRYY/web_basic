@@ -1,0 +1,42 @@
+@charset "UTF-8";
+div{
+	display: inline-block;
+}
+
+.tr1{
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	border: 1px solid black;
+	transition-property: width, height;
+	transition-duration: 2s, 1s;
+}
+.tr1:hover{
+	width: 200px;
+	height: 120px;
+}
+.tr2{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	border: 1px solid black;
+	transition-property: background-color, transform, width, height;
+	transition-duration: 2s, 3s;
+}
+.tr2:hover{
+	width:200px;
+	height:200px;
+	background-color:#ff6e5f;
+	transform:rotate(180deg);
+}
+
+.box {
+	width:100px;
+	height:100px;
+	margin:100px;
+	background:#0094ff;
+	transition: 2s ease-in;
+}
+.box:hover{
+	transform: scale(2) perspective(120px) rotateX(180deg);
+}

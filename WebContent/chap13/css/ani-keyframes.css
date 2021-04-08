@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+div{
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	animation-name: change-bg;
+	animation-duration: 3s;
+	margin: 30px;
+}
+
+@keyframes change-bg {
+	from {
+		background-color: blue;
+		border: 1px solid black;
+	}
+	to { 
+		background-color: #a5d6ff;
+		border: 1px solid blue;
+		border-radius: 50%;
+	}
+}
+
+#box1 {
+	background-color: #4cff00;
+	border: 1px solid black;
+	animation-name: shape;
+	animation-duration: 3s;
+}
+#box2 {
+	background-color: #8f06b0;
+	border: 1px solid black;
+	animation-name: rotate;
+	animation-duration: 3s;
+}
+@keyframes shape {
+	from {
+		border: 1px solid black;
+	}
+	to {
+		border: 1px solid black;
+		border-radius: 50%;
+	}
+}
+@keyframes rotate{
+	from {
+		transform: rotate(0deg);
+	}	
+	to {
+		transform: rotate(45deg);
+	}
+}
+
+.box3{
+	margin-top:50px;
+	margin-left: 100px;
+	padding: 20px;
+	height: 60px;
+	animation-name: moving;
+	animation-duration: 3s;
+	animation-direction: normal;
+	animation-iteration-count: infinite;
+}
+@keyframes moving{
+	from {
+		width: 200px;
+		background: #faef7c;
+		opacity: 0.5;
+		transform: scale(0.5) rotate(15deg);
+	}
+	to {
+		width: 400px;
+		background: #ff9400;
+		opacity: 1;
+		transform: scale(1) rotate(0deg);
+	}
+}
+
+.box4{
+	width: 60px;
+	height:60px;
+	margin: 60px;
+	animation: rotate 1.5s infinite, background 1.5s infinite alternate;
+}
+@keyframes rotate {
+	from{
+		transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+	}
+	50% {
+		transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+	}
+	to {
+		transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+	}
+}
+@keyframes background {
+	from { background: red;}	
+	50% { background-color: green;}
+	to { background-color: blue;}
+}

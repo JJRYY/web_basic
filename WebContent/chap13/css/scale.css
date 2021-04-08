@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.scalex:hover {
+	transform: scaleX(1.2);
+}
+.scaley:hover{
+	transform: scaleY(1.5)
+}
+.scale:hover{
+	transform: scale(0.7);
+}
